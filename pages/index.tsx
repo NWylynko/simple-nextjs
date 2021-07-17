@@ -47,7 +47,7 @@ const Log = ({ log }: LogProps) => {
     <span key={logItem.id} >{logItem.timestamp.toTimeString().slice(0,8)} {logItem.action} {logItem.message}</span>
   ))
   return (
-    <div>
+    <div style={{ display: 'flex', flexDirection: 'row' }}>
       {list}
     </div>
   )
